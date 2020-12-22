@@ -1,0 +1,28 @@
+*{
+    font-family: "Source Sans Pro";
+}
+.card-title{
+    height: 40px;
+}
+.card-title a{
+    color: #555 !important;
+    font-size: .8em;
+}
+
+.card-text.harga{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.container-card{
+    place-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(130px,150px));
+    gap: 5px;
+}
+
+@media screen and (max-width: 567px){
+    .container-card{
+        gap: 1px;
+    }
+}
