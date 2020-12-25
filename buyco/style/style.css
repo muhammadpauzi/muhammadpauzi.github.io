@@ -1,0 +1,246 @@
+@font-face{
+    font-family: 'Poppins';
+    src: url(font/Poppins-Regular.ttf) format(ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,'Segoe UI', sans-serif;
+    transition: .4s;
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+nav .logo a img{
+    width: 100px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 500px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li a{
+    margin: 0 30px 0 0;
+    text-decoration: none;
+    columns: #818181;
+}   
+nav ul li a:hover,nav ul li a.active{
+    color: #5C98DE;
+}
+nav .sign a{
+    display: block;
+    position: relative;
+    border-radius: 100px;
+    text-align: center;
+    padding: 5px 0;
+    width: 130px;
+    border: 1px solid #5C98DE;
+    color: #5C98DE;
+    text-decoration: none;
+    transition: .4s;
+}
+nav .sign a:hover{
+    color: white;
+    background-color: #5C98DE;
+    box-shadow: 0 10px 20px rgba(92, 152, 222,.5);
+}
+.dark-mode{
+    position: absolute;
+    bottom: 15px;
+    right: 80px;
+}
+.ham{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 9999;
+    display: none;
+}
+
+/* Dark mode */
+body.dark{
+    background-color: #010A16;
+}
+body.dark .content h1{
+    color: white;
+}
+body.dark nav{
+    background-color: rgba(255, 255, 255, .2);
+}
+body.dark nav ul li a{
+    color: white;
+}
+body.dark nav ul li a.active,body.dark nav ul li a:hover{
+    color: #5C98DE;
+}
+body.dark span.dark-mode{
+    color: white;
+}
+
+/* content */
+.content{
+    width: 100%;
+    height: 100vh;
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.content .kiri{
+    width: 50%;
+    height: 100%;
+    padding-top: 150px;
+}
+.content .kiri h1{
+    width: 60%;
+    color: #515151;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.content .kiri p{
+    width: 70%;
+    line-height: 30px;
+    color: #9D9D9D;
+    margin-bottom: 20px;
+}
+.content .kiri a.sign-content{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    background-color: #5C98DE;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 50px;
+    transition: .4s;
+}
+.content .kiri a.sign-content:hover{
+    box-shadow: 0 10px 20px rgba(92, 152, 222,.5);
+}
+.content .kanan{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content .kanan img{
+    width: 500px;
+}
+
+
+.dark-check{
+    cursor: pointer;
+}
+
+
+
+
+
+@media (max-width: 768px){
+    nav{
+        padding: 0 10px;
+    }
+    nav ul{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        padding: 100px 0;
+        background-color: white;
+        transform: translateX(100%);
+        z-index: 999;
+    }
+    nav ul.muncul{
+        transform: translateX(0);
+    }
+    nav ul li a{
+        font-size: 2em;
+        margin: 0;
+        color: #515151;
+    }
+    nav .sign a{
+        width: 200px;
+        font-size: 1.5em;
+    }
+    .ham{
+        display: block;
+    }
+    /* content */
+    .content{
+        padding: 0 30px;
+    }
+    .content .kiri{
+        width: 100%;
+    }
+    .content .kiri h1{
+        width: 100%;
+    }
+    .content .kiri p{
+        width: 100%;
+    }
+    .content .kanan{
+        display: none;
+    }
+    .dark-mode{
+        font-size: 1.5em;
+        bottom: 15px;
+        left: 40px;
+        z-index: 1;
+    }
+    .dark-check{
+        width: 20px;
+        height: 20px;
+    }
+    /* dark mode */
+    body.dark nav ul{
+        background-color: #010A16;
+    }
+}
+
+@media (max-width: 992px){
+    nav{
+        padding: 0 10px;
+    }
+    .content{
+        padding: 0 15px;
+        padding-top: 50px;
+    }
+    .content .kanan img{
+        width: 400px;
+    }
+    .content .kiri h1{
+        font-size: 2em;
+        width: 100%;
+    }
+    .content .kiri p{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1080px){
+    .content .kiri h1{
+        width: 100%;
+    }
+}

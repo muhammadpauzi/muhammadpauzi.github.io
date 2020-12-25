@@ -1,0 +1,246 @@
+@font-face {
+  font-family: "montserrat";
+  src: url(../Font/Montserrat-Regular.ttf) format(ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #47497a;
+  font-family: "montserrat", sans-serif;
+  overflow: hidden;
+}
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+  z-index: 9999;
+}
+nav .logo {
+  transform: translateX(-30px);
+  opacity: 0;
+  transition: 1s;
+}
+nav .logo.logo-muncul {
+  transform: translateX(0);
+  opacity: 1;
+}
+nav .logo img {
+  width: 70px;
+}
+
+.ham{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 30px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99999;
+  cursor: pointer;
+}
+.ham span{
+  display: none;
+  width: 100%;
+  height: 4px;
+  background-color: red;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  transform: translateX(30px);
+  opacity: 0;
+  transition: 1s;
+}
+nav ul.ul-muncul {
+  transform: translateX(0);
+  opacity: 1;
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-right: 40px;
+  font-size: 14px;
+  transition: 0.4s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ec738b;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0 70px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+section::before {
+  content: "Better";
+  position: absolute;
+  bottom: -140px;
+  left: -60px;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 394px;
+  font-weight: 700;
+  z-index: -1;
+}
+section h1 {
+  width: 50%;
+  font-size: 70px;
+  font-weight: 600;
+  color: white;
+  transform: translateY(-30px);
+  opacity: 0;
+  transition: 1s;
+}
+section h1.judul-muncul {
+  transform: translateY(0);
+  opacity: 1;
+}
+section h1 span {
+  color: #ec738b;
+}
+section p {
+  width: 50%;
+  margin: 10px 0;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.6);
+  transform: translateX(-30px);
+  opacity: 0;
+  transition: 1s;
+}
+section p.parag-muncul {
+  transform: translateX(0);
+  opacity: 1;
+}
+section a {
+  display: flex;
+  width: 190px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 100px;
+  margin-top: 10px;
+  font-size: 1.2em;
+  transition: 0.4s;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all .4s;
+}
+section a.link-muncul {
+  transform: translateY(0);
+  opacity: 1;
+}
+section a:hover {
+  background-color: #ec738b;
+  border: 2px solid #ec738b;
+  color: white;
+}
+footer {
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  padding: 0 70px;
+  display: flex;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: 1s;
+}
+footer p {
+  margin-right: 30px;
+}
+footer.footer-muncul {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+@media (max-width: 575.98px) {
+  section{
+    padding: 0 10px;
+  }
+  section h1{
+    width: 90%;
+    font-size: 40px;
+  }
+  section p{
+    width: 90%;
+  }
+  section::before {
+    content: "Better";
+    position: absolute;
+    top: 60px;
+    left: -60px;
+    height: 20px;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 120px;
+    font-weight: 700;
+    z-index: -1;
+  }
+  section a{
+    width: 140px;
+    font-size: 12px;
+    height: 40px;
+  }
+  footer {
+    display: none;
+  }
+  footer p{
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  nav{
+    padding: 0 10px;
+  }
+
+  nav ul{
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: .1s;
+  }
+  nav ul li a{
+    color: #47497a;
+    margin: 0;
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  .ham{
+    display: flex;
+  }
+  .ham span{
+    display: block;
+  }
+  nav ul.navmuncul{
+    left: 0;
+  }
+}
