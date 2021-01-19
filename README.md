@@ -12,7 +12,7 @@ https://muhammadpauzi.github.io/ShareEx/
 
 https://muhammadpauzi.github.io/Zyru/
 
-https://muhammadpauzi.github.io/Buyco/
+https://muhammadpauzi.github.io/buyco/
 
 https://muhammadpauzi.github.io/EngineerW/
 
