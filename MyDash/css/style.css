@@ -1,0 +1,210 @@
+*{
+    font-family: "Source Sans Pro",sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F5F6FB;
+    position: relative;
+}
+
+
+/* Semua Icon */
+header .profile a.message-icon,main .my-container .delete ,main .my-container .edit{
+    display: flex;
+    align-items: center;
+    color: #B9B9B9;
+    height: 16px;
+    width: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+/* Semua Icon yang di hover */
+header .profile a.message-icon:hover, aside .ham-nav:hover{
+    color: #6B6B6B;
+}
+
+/* Header */
+
+header{
+    height: 60px;
+    background-color: white;
+    border-bottom: 1px solid #ECEDF1;
+}
+
+header h3 a{
+    margin: 0;
+    color: #B9B9B9;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+header h3 a:hover{
+    text-decoration: none;
+    color: #6B6B6B;
+}
+
+/* Semua Icon */
+header .profile a.message-icon,main .my-container .delete ,main .my-container .edit{
+    display: flex;
+    align-items: center;
+    color: #B9B9B9;
+    height: 16px;
+    width: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+/* Semua Icon yang di hover */
+header .profile a.message-icon:hover, aside .ham-nav:hover,main .my-container .delete:hover ,main .my-container .edit:hover{
+    color: #6B6B6B;
+}
+
+.img-profile{
+    width: 36px;
+    border-radius: 50%;
+    height: 36px;
+}
+
+/* Aside / Sidebar */
+
+
+aside{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 60px;
+    border-right: 1px solid #ECEDF1;
+    background-color: #fff;
+    transition: .3s;
+    z-index: 999;
+}
+
+aside .ham-nav{
+    color: #B9B9B9;
+    font-size: 20px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+aside .list-menu{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+aside .list-menu li{
+    width: 100%;
+    line-height: 50px;
+    height: 50px;
+}
+aside .list-menu li a{
+    display: block;
+    color: #B9B9B9;
+    width: 100%;
+    height: 100%;
+    border-left: 2px solid rgba(0, 0, 0, 0);
+}
+
+aside .list-menu li a:hover,aside .list-menu li a.active{
+    color: #6B6B6B;
+    background-color: #EEEFF2;
+    border-left-color:#2E5BFF;
+}
+
+/* Main */
+main h1{
+    color: #9F9F9F;
+    font-weight: normal;
+}
+.my-btn-primary{
+    background-color: #2E5BFF;
+    color: white;
+    margin-bottom: 1em;
+}
+/* Untuk menghindari text tersembunyi di sidebar */
+.my-container{
+    width: 100%;
+    padding: 0 80px;
+}
+
+.table-responsive{
+    overflow-x: auto;
+}
+
+/* Table */
+main table thead tr,main table tbody tr{
+    background-color: #fff;
+    border: 1px solid #ECEDF1;
+    color: #9F9F9F;
+    font-size: 15px;
+}
+
+main table thead tr th, main table tbody tr td{
+    font-weight: normal;
+    padding: 10px 20px;
+}
+
+main table tbody tr td .aksi{
+    display: flex;
+}
+
+main .my-container .delete:hover{
+    color: red;
+}
+main .my-container .edit:hover{
+    color: #2E5BFF;
+}
+input.my-form-control::placeholder{
+    color: #9F9F9F;
+}
+input.my-form-control{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #9F9F9F;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+input.my-form-control:focus{
+    box-shadow: 0 0 .5px 1px rgba(46, 91, 255,.5);
+    color: #9F9F9F;
+    outline: none;
+    border: 1px solid rgba(46, 91, 255,.5);
+}
+
+
+@media (max-width: 580px) {
+    .my-container{
+        padding: 0 20px 0 70px;
+    }
+}
+
+
+
+
+/* Add */
+
+/* Card */
+.my-card-form {
+    color: #9F9F9F;
+}
+
+.my-card-form .card-body .custom-file-label{
+    color: #9F9F9F;
+}

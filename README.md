@@ -15,3 +15,11 @@ https://muhammadpauzi.github.io/Zyru/
 https://muhammadpauzi.github.io/Buyco/
 
 https://muhammadpauzi.github.io/EngineerW/
+
+https://muhammadpauzi.github.io/MyPortfolio/
+
+https://muhammadpauzi.github.io/Portfolio/
+
+https://muhammadpauzi.github.io/MyDash/
+
+https://muhammadpauzi.github.io/SKN-Negeri-1-Stabat/
