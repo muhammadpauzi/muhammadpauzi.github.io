@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38.227" height="38.227" viewBox="0 0 38.227 38.227">
+  <g id="Group_9" data-name="Group 9" transform="translate(1.25 1.25)">
+    <path id="check" d="M19.807,6,8.94,16.868,4,11.928" transform="translate(6.563 6.676)" fill="none" stroke="#ff5b69" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+    <path id="message-circle" d="M38.727,19.871a16.633,16.633,0,0,1-1.786,7.542,16.871,16.871,0,0,1-15.085,9.329,16.633,16.633,0,0,1-7.542-1.786L3,38.727,6.771,27.414a16.633,16.633,0,0,1-1.786-7.542A16.871,16.871,0,0,1,14.314,4.786,16.633,16.633,0,0,1,21.856,3h.992A16.831,16.831,0,0,1,38.727,18.879Z" transform="translate(-3 -3)" fill="none" stroke="#ff5b69" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/>
+  </g>
+</svg>

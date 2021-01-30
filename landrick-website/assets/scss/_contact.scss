@@ -1,0 +1,58 @@
+.contact-section{
+    background-color: $grayColor;
+    min-height: 400px;
+    padding: 104px 0;
+    position: relative;
+    width: 100%;
+    
+    .content-group-contact{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        @include flex(center,center,column);
+
+        .title{
+            font-size: $titleSize;
+            color: black;
+        }
+
+        .parag-contact{
+            font-size: $paragSize;
+            color: $textDarkColor;
+            margin: 32px 0;
+            width: 400px;
+            line-height: 31px;
+
+            a{
+                color: $primaryColor;
+            }
+        }
+
+        .link-contact{
+            @include linkButton($primaryColor,white,$primaryColorHover);
+            width: 155px;
+            padding: 10px 20px;
+        }
+    }
+
+    .curve{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: -50px;
+        z-index: 99;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .contact-section{
+
+        .content-group-contact{
+    
+            .parag-contact{
+                width: 90%;
+
+            }
+        }
+    }
+}

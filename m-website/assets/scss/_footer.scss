@@ -1,0 +1,38 @@
+.footer{
+    width: 100%;
+    background-color: black;
+    height: 300px;
+
+    &__content{
+        text-align: center;
+        
+        .logo a{
+            font-size: 4em;
+            font-weight: 900;
+            color: white;
+        }
+
+        .info-profile p{
+            color: white;
+            margin-bottom: 20px;
+
+            a{
+                display: inline-block;
+                color: #999;
+                
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+
+        .social-media a{
+            margin: 0 20px;
+            color: #999;
+
+            &:hover{
+                color: white;
+            }
+        }
+    }
+}

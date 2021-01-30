@@ -1,0 +1,31 @@
+.info{
+    width: 100%;
+    background-image: linear-gradient(to right,#006ACE,#02C8F9);
+    height: 200px;
+
+    &__content{
+
+        p{
+            color: white;
+            margin-right: 40px;
+        }
+
+        .link{
+            @include link(white,black);
+        }
+    }
+}
+
+@media screen and (max-width: 567px){
+    .info{
+        &__content{
+            flex-direction: column;
+
+            p{
+                text-align: center;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

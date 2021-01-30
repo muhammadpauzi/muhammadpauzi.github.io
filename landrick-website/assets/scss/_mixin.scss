@@ -1,0 +1,21 @@
+@mixin flex($alignItems: center,$justifyContent: center,$flexDirection: row){
+    display: flex;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+    flex-direction: $flexDirection;
+}
+
+@mixin linkButton($bgColor: $primaryColor,$textColor: white,$bgColorHover: #f7f7f7){
+    display: block;
+    text-decoration: none;
+    background-color: $bgColor;
+    color: $textColor;
+    border-radius: $borderRadius;
+    transition: .3s;
+    @include flex();
+
+    &:hover{
+        background-color: $bgColorHover;
+        box-shadow: 0 10px 10px rgba(0,0,0,.05);
+    }
+}

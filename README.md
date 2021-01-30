@@ -23,3 +23,7 @@ https://muhammadpauzi.github.io/Portfolio/
 https://muhammadpauzi.github.io/MyDash/
 
 https://muhammadpauzi.github.io/SKN-Negeri-1-Stabat/
+
+https://muhammadpauzi.github.io/landrick-website/
+
+https://muhammadpauzi.github.io/m-website/

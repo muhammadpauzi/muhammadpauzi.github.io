@@ -1,0 +1,67 @@
+.stories{
+    width: 100%;
+    min-height: 500px;
+    padding: 5em 4em;
+    position: relative;
+    
+    &__title{
+        @include title(black);
+    }
+    
+    &__cards-group{
+     width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,400px);
+        gap: 20px;
+
+        .card{
+            width: 400px;
+
+            .card-image{
+                width: 100%;
+
+                img{
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            .card-content{
+                padding: 20px 0;
+
+                p{
+                    text-transform: uppercase;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .stories{
+        padding: 3em 10px;
+        
+        &__cards-group{
+            grid-template-columns: repeat(1,100%) !important;
+    
+            .card{
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .stories{
+        padding: 3em 10px;
+        
+        &__cards-group{
+            grid-template-columns: repeat(2,320px);
+    
+            .card{
+                width: 320px;
+            }
+        }
+    }
+}

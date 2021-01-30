@@ -1,0 +1,44 @@
+.brands{
+    width: 100%;
+    min-height: 500px;
+    padding: 5em 4em;
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &__title{
+        @include title(white);
+    }
+
+    &__logo{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,130px);
+        justify-content: space-between;
+        align-items: center;
+        filter: invert(1);
+
+        .logo{
+            margin-bottom: 2em;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .brands{
+        padding: 3em 10px;
+    
+        &__logo{
+            width: 100%;
+            grid-template-columns: repeat(1,100%);
+            justify-content: center;
+            
+            .logo{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

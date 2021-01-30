@@ -1,0 +1,43 @@
+@mixin title($color)
+{
+        width: 100%;
+        margin-bottom: 50px;
+
+        .title{
+            font-size: $titleSize;
+            font-weight: 800;
+            color: $color;
+        }
+
+        .subtitle{
+            color: $color;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 60px;
+        }
+
+        hr{
+            display: block;
+            width: 30px;
+            border: 1px solid $color;
+        }
+}
+
+@mixin link ($bgColor,$color){
+    text-align: center;
+    width: 110px;
+    padding: 12px 10px;
+    font-size: 10px;
+    font-weight: 800;
+    background-color: $bgColor;
+    color: $color;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: .3s;
+    border: 2px solid $bgColor;
+
+    &:hover{
+        background-color: transparent;
+        color: $bgColor;
+    }
+}

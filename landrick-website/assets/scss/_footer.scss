@@ -1,0 +1,168 @@
+.footer-section{
+    min-height: 300px;    
+    background-color: $secondaryColor;
+    padding-top: 80px;
+
+    .top-footer{
+        width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: auto;
+        place-content: center;
+        padding-bottom: 30px;
+
+        .left-section{
+            text-align: left;
+
+            .logo-landrick{
+                font-size: 26px;
+                color: white;
+                font-size: $extraBold;
+                margin-bottom: 20px;
+            }
+
+            .parag-content-left{
+                font-size: $paragSize;
+                color: white;
+                line-height: $lineHeight;
+
+                a{
+                    color: $primaryColor;
+                }
+            }
+        }
+
+        .center-section{
+            padding-left: 40px;
+
+            .menus-title{
+                font-size: 26px;
+                color: white;
+                margin-bottom: 20px;
+                font-weight: $extraBold;
+            }
+
+            .footer-nav-group-item{
+                list-style: none;
+
+                .footer-nav-link{
+                    color: rgb(177, 177, 177);
+                    line-height: 31px;
+                    transition: .3s;
+
+                    &:hover,&.active{
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .right-section{
+            .newslatter-title{
+                font-size: 26px;
+                color: white;
+                margin-bottom: 20px;
+                font-weight: $extraBold;
+            }
+
+            .parag-newslatter{
+                font-size: $paragSize;
+                color: white;
+                margin-bottom: 10px;
+            }
+
+            .group-subscribe{
+
+                small{
+                    color: white;
+
+                    .required-icon{
+                        color: $primaryColor;
+                    }
+                }
+
+                .group-input-subscribe{
+                    display: flex;
+                    padding-top: 10px;
+
+                    .input-subscribe{
+                        background-color: #27304F;
+                        padding: 10px;
+                        outline: none;
+                        border: 1px solid #232C4B;
+                        color: white;
+                        border-radius: $borderRadius;
+                    }
+
+                    .btn-subscribe{
+                        border-radius: $borderRadius;
+                        border: 1px solid #FB4251;
+                        color: white;
+                        background-color: rgba(255, 91, 105,.6);
+                        padding: 0 20px;
+                        cursor: pointer;
+                        transition: .3s;
+
+                        &:hover{
+                            background-color: rgb(255, 91, 105);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-footer{
+        height: 85px;
+        border-top: 1px solid rgba(255,255,255,.05);
+        background-color: $secondaryColor;
+        @include flex();
+        
+        .parag-copyright{
+            color: white;
+            
+            a{
+                color: $primaryColor;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .footer-section{
+        padding: 80px 20px 10px;
+
+        .top-footer{
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer-section{
+        .top-footer{
+            width: 100%;
+            grid-template-columns: 1fr;
+    
+            .center-section{
+                padding: 40px 0;
+            }
+        }
+    
+        .bottom-footer{
+            height: 85px;
+            border-top: 1px solid rgba(255,255,255,.05);
+            background-color: $secondaryColor;
+            @include flex();
+            
+            .parag-copyright{
+                color: white;
+                
+                a{
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+}
